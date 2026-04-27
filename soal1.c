@@ -62,7 +62,7 @@ void output(){
         printf("MEDIAN %d", median);
     }
     else if (jumlah %2 == 0){
-        printf("MEDIAN %0.1f", mediun);
+        printf("MEDIAN %0.2f", mediun);
     }
 }
 
