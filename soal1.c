@@ -14,7 +14,8 @@
 int *daftar = NULL;
 int jumlah = 0;
 int median;
-float mediun; 
+float mediun;
+
 void tambah(){
     int bilangan;
     scanf("%d", &bilangan);
@@ -30,8 +31,7 @@ void hitung_median(){
     if (jumlah % 2 == 0){
         int kiri = (jumlah-1)/2;
         int kanan = (jumlah-1)/2 + 1;
-        median = (daftar[kiri] + daftar[kanan])/2;
-        mediun = median + 0.5;
+        mediun = (daftar[kiri] + daftar[kanan])/2 + 0.5;
     }
     else if (jumlah % 2 == 1){
         int tengah = (jumlah-1)/2;
@@ -59,7 +59,7 @@ void output(){
     }
     printf("%d ", daftar[jumlah-1]);
     if(jumlah % 2 == 1){
-        printf("MEDIAN %g", median);
+        printf("MEDIAN %d", median);
     }
     else if (jumlah %2 == 0){
         printf("MEDIAN %0.1f", mediun);
