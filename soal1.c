@@ -31,7 +31,7 @@ void hitung_median(){
     if (jumlah % 2 == 0){
         int kiri = (jumlah-1)/2;
         int kanan = (jumlah-1)/2 + 1;
-        if (daftar[kiri] == daftar[kanan]){
+        if (daftar[kiri] == daftar[kanan] || ((daftar[kiri] + daftar[kanan])%2) == 0){
             mediun = (daftar[kiri] + daftar[kanan])/2;
         }
         else{
