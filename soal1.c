@@ -31,7 +31,12 @@ void hitung_median(){
     if (jumlah % 2 == 0){
         int kiri = (jumlah-1)/2;
         int kanan = (jumlah-1)/2 + 1;
-        mediun = (daftar[kiri] + daftar[kanan])/2 + 0.5;
+        if (daftar[kiri] == daftar[kanan]){
+            mediun = (daftar[kiri] + daftar[kanan])/2;
+        }
+        else{
+            mediun = (daftar[kiri] + daftar[kanan])/2 + 0.5;
+        }
     }
     else if (jumlah % 2 == 1){
         int tengah = (jumlah-1)/2;
